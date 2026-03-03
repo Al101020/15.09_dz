@@ -6,7 +6,7 @@
 .newPost {
   background: white;
   width: 100%;
-  min-height: 25px;
+  min-height: 30px;
   margin-bottom: 10px;
 }
 
@@ -17,4 +17,18 @@
   min-height: 25px;
   height: 100%;
   background: white;
+}
+
+#btnNewPost {
+  margin: 5px 0 0 0;
+  background-color: rgb(63, 63, 135);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#inputNewPost {
+  width: 330px;
+  margin: 5px 0 0 10px;
+  border: 1px solid #ffffff;
 }

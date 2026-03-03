@@ -139,9 +139,10 @@ fetch('http://localhost:7070/posts')
     console.error('Fetch error:', error);
   });
 
+https://skillbox.ru/media/code/html-form-teg-dlya-sozdaniya-form-ego-atributy-metody-otpravki-dannyh/
 
 
-
+--------------------------------------------------------------------------------------------
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
