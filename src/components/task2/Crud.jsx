@@ -1,9 +1,15 @@
 import './Crud.css';
-import { useEffect, useState } from 'react';
+import NewPost from './NewPost';
+import Posts from './Posts';
+// import { useEffect, useState } from 'react';
+
 
 function Crud() {
   return (
-    <div className='task2'></div>
+    <div className='task2'>
+      <NewPost />
+      <Posts />
+    </div>
   )
 };
 

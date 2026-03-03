@@ -1,1 +1,20 @@
+.task2 {
+  background: rgb(204, 203, 203);
+  padding: 10px;
+}
 
+.newPost {
+  background: white;
+  width: 100%;
+  min-height: 25px;
+  margin-bottom: 10px;
+}
+
+.crudPosts {
+  /* margin: 5px; */
+  /* border: 1px solid #361F36; */
+  width: 100%;
+  min-height: 25px;
+  height: 100%;
+  background: white;
+}
