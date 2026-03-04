@@ -1,9 +1,9 @@
 import fetchPosts from './fetchPosts';
 
-export default function CrudPosts() {
+export default function Posts() {
   fetchPosts();
 
   return (
-    <div className='crudPosts'></div>
+    <div className='posts'></div>
   )
 }

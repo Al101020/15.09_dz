@@ -1,26 +1,24 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
-export default function NewPost() {
-  const [newPost, setNewPost] = useState('');
-  
+export default function NewPost(props) {  // console.log(props);
   const onChange = ({ target }) => {
-    setNewPost(target.value);    // console.log(target.value);
+    props.setNewPost(target.value);    // console.log(target.value);
   }
   
-  const clickNewPost = (e) => {
+  const clickBtnNewPost = (e) => {
     e.preventDefault();
-    console.log(newPost);
-    setNewPost('');
+    console.log(props.newPost);
+    props.setNewPost('');
   }
 
   return (
-    <div className='newPost' onSubmit={clickNewPost}>
+    <div className='newPost' onSubmit={clickBtnNewPost}>
       <form autoComplete='off'>
         <input 
           type='text' 
           id='inputNewPost' 
           name='inputNewPost'
-          value={newPost}
+          value={props.newPost}
           onChange={onChange}
           placeholder="Пишим что хотим"
           required
