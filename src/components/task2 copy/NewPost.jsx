@@ -5,16 +5,14 @@ export default function NewPost(props) {  // console.log(props);
     props.setNewPost(target.value);    // console.log(target.value);
   }
   
-  const funcClickBtnNewPost = (e) => {
-    e.preventDefault();    // console.log(props.newPost);
-    // console.log(props.clickBtnNewPost);
-    // props.setClickBtnNewPost(props.clickBtnNewPost.push(props.newPost));
-    props.setClickBtnNewPost(props.newPost);
+  const clickBtnNewPost = (e) => {
+    e.preventDefault();
+    console.log(props.newPost);
     props.setNewPost('');
   }
 
   return (
-    <div className='newPost' onSubmit={funcClickBtnNewPost}>
+    <div className='newPost' onSubmit={clickBtnNewPost}>
       <form autoComplete='off'>
         <input 
           type='text' 
