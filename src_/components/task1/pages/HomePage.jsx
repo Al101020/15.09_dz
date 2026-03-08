@@ -1,4 +1,6 @@
 export default function HomePage() {
+  // return <><h1>Главная</h1>
+  // <h2>Главная</h2></>;
   return <article className="article">
       <h1 className="article__title">Гоночн​ое такси</h1>
       <p className="article__paragraph">

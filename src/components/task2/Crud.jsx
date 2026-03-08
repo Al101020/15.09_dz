@@ -1,41 +1,18 @@
 import './Crud.css';
-import NewPost from './NewPost';
-import Posts from './Posts';
-import { useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router'
+import HomePage from './pages/HomePage'
+import PostNew from './pages/PostNew';
+// import { useEffect, useState } from 'react'; // useNavigate()
+// import { useNavigate } from 'react-router-dom';
 
 
 function Crud() {
-  const [newPost, setNewPost] = useState('');
-  const [clickBtnNewPost, setClickBtnNewPost] = useState('');
-
-  useEffect(() => {
-    console.log(clickBtnNewPost);
-
-    if (clickBtnNewPost !== '') {
-      fetch('http://localhost:7070/posts', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          clickBtnNewPost
-        })
-      })
-        // .then(response => console.log(response)) //.then(response => response.json())
-        // .then(data => console.log(data))
-        .catch(error => console.error('Fetch error:', error));
-    }
-
-  }, [clickBtnNewPost]);
-
   return (
     <div className='task2'>
-      <NewPost 
-        newPost={newPost} 
-        setNewPost={setNewPost}
-        clickBtnNewPost={clickBtnNewPost}
-        setClickBtnNewPost={setClickBtnNewPost} />
-      <Posts clickBtnNewPost={clickBtnNewPost} />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/posts/new' element={<PostNew />} />
+      </Routes>
     </div>
   )
 };
