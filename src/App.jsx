@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter } from 'react-router'
 import NavigationMenu from './components/task1/NavigationMenu';
-import Crud from './components/task2/Crud';
 
 function App() {
 
@@ -10,10 +9,6 @@ function App() {
       <h3>Задание №1 - Навигационное меню</h3>
       <BrowserRouter>
         <NavigationMenu />
-      </BrowserRouter>
-      <h3>Задание №2 - CRUD</h3>
-      <BrowserRouter>
-        <Crud />
       </BrowserRouter>
     </>
   )
